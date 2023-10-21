@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Form</title>
+</head>
+<body>
+
+<h2>Appointment Request Form</h2>
+
+         <form onsubmit="submitAppointmentRequest(event)">
+            
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="full_name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="appointment_date">Appointment Date:</label>
+    <input type="date" id="appointment_date" name="appointment_date" required><br><br>
+
+    <label for="appointment_time">Appointment Time:</label>
+    <input type="time" id="appointment_time" name="appointment_time" required><br><br>
+
+    <label for="reason">Reason for Appointment:</label><br>
+    <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit Appointment">
+</form>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../js/appointments.js "></script>
+</body>
+</html>

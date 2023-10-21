@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Appointments</title>
+</head>
+<body>
+    <h2>Appointments</h2>
+
+    <!-- Button to trigger the GET request -->
+    <button id="get-appointments-button">Get Appointments</button>
+
+    <!-- Display area for the appointments -->
+    <div id="appointments-list"></div>
+
+    <!-- Include the Axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Include the external JavaScript file (appointments.js) -->
+    <script src="../js/getAppointments.js"></script>
+
+    <script>
+        // Attach the JavaScript function to the button click event
+        document.getElementById('get-appointments-button').addEventListener('click', function(event) {
+            getAppointmentsRequest(event); // Call the function when the button is clicked
+        });
+    </script>
+</body>
+</html>
